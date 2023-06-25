@@ -1,0 +1,171 @@
+:root{
+    --box-shadow: 0px 1px 4px 1px #808080;
+    --color1: rgb(131, 218, 0);
+    --color2: rgb(255, 92, 92);
+}
+body{
+    background-color: rgb(249, 252, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto slab;
+}
+.container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.pie-chart{
+    padding: 10px 50px;
+}
+.pie-chart h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.pie-chart ul{
+    list-style: none;
+}
+.pie-chart ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pie-chart ul li div{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+} 
+#inc_col{
+    background-color: #9dff6f;
+}
+#exp_col{
+    background-color: #a81409;
+}
+.title{
+    background: linear-gradient(to right,#d41306,#071E22);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.title span{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.main{
+    padding: 20px 50px;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.curr_bal{
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.curr_bal h3{
+    text-align: center;
+}
+#current_balance{
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+.inc_exp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px; 
+}
+.income-box span{
+    font-size: 1.1rem;
+}
+.amt{
+    font-size: 1.2rem;
+}
+.amt span{
+    font-size: 1.2rem;
+}
+.income h3{
+    color: darkgreen;
+}
+.expense h3{
+    color: rgb(230, 0, 0);
+}
+.history ul{
+    list-style: none;
+}
+.history ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid rgb(214, 209, 209);
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+/* .new_transaction form{
+    display: flex;
+    flex-direction: column;
+} */
+.new_transaction label{
+    font-weight: bold;
+    font-size: 1.2rem
+}
+.new_transaction input{
+    font-size: 1rem;
+}
+.btn{
+    font-size: 1.2rem;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+.btn-inc:hover{
+    background-color: rgb(113, 189, 0);
+    transition: all 0.3s;
+}
+.btn-exp:hover{
+    background-color: rgb(248, 57, 57);
+    transition: all 0.3s;
+}
+.btn-inc{
+    background-color: var(--color1);
+    /* color: aliceblue; */
+    margin: 5px;
+}
+.btn-exp{
+    background-color: var(--color2);
+    /* color: aliceblue; */
+    margin: 5px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.inc_amt{
+    padding: 3px;
+    background-color: var(--color1);
+    border-radius: 5px;
+    /* color: aliceblue; */
+}
+.exp_amt{
+    padding: 3px;
+    background-color: var(--color2);
+    border-radius: 5px;
+    /* color: aliceblue; */
+}
